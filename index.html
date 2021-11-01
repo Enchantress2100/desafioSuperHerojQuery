@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <title>Proyecto Find your Superhero</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="./assets/sh2.jpg" alt="superhero2" width="30" height="24">
+          <a class="navbar-brand me-auto px-2" href="index.html">SuperHero</a>
+        </div>
+      </nav>
+
+      <img src="./assets/sh1.jpg" alt="superhero1" class="center">
+      <h1 class="absolute">Find your SuperHero</h1>
+      <h2 class="absolute">Write the ID (number) of the SuperHero you want to find:</h2>
+      <input type="search" class="absolute" id="numero" placeholder="Write the number"><br>
+      <button type="button" class="btn btn-primary absolute mt-2" id="buscar">Search</button>
+
+      <p id="respuesta"></p>
+
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img id="HeroPicture" class="picture" src=""img-fluid rounded-start" alt="SuperHero">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Name: <span id="name"></span> </h5>
+            <p class="card-text">Connections: <span id="connections"></span> </p>
+            <p class="card-text">Published by: <span id="published" ></span> </p>
+            <p class="card-text">Occupation: <span id="occupation" ></span> </p>
+            <p class="card-text">First Appearance: <span id="first" ></span> </p>
+            <p class="card-text">Height: <span id="height"></span> </p>
+            <p class="card-text">Weight: <span id="weight"></span> </p>
+            <p class="card-text">Aliases: <span id="aliases"></span> </p>  
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div id="chartContainer" style="height: 300px; width: 100%;">
+    </div>
+
+  
+
+
+
+<script src="./assets/script.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>  
+</body>
+</html>
