@@ -12,7 +12,7 @@ $(document).ready(function () {
     const llamarAPI = numero =>{  
         $.ajax({
           type: 'get',
-          url: `https://superheroapi.com/api.php/10225686259401018/${numero}`,
+          url: `https://www.superheroapi.com/api.php/10225686259401018/${numero}`,
           dataType: "json",
           success: function (response) {
             $('#HeroPicture').attr("src",response.image.url);
@@ -28,7 +28,6 @@ $(document).ready(function () {
             grafico(response)
           }
         })
-
     }
     function grafico (response) {
       console.log(response.powerstats.intelligence)
@@ -56,6 +55,5 @@ $(document).ready(function () {
         }]
       };
       $("#chartContainer").CanvasJSChart(options);
-      }
-    
+      } 
 });
